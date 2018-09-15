@@ -102,7 +102,12 @@ int main() {
 
 - **Second part**
 
-  Update the code so that it `*stomp*` when the number is a multiple of `5`, and `*click*` when a multiple of `3`.
+  Update the code so that it `*stomp*` when the number is a multiple of `5`, and `*click*` when a multiple of `3`. If a number can be decomposed into several factors, do the actions together in any order, like for `35`, output:
+  
+  ```
+  *clap*
+  *stomp*
+  ```
 
 ## 5. Area of circle
 
@@ -135,7 +140,7 @@ int main() {
 
 #### Instruction
 
-- Generate the first 100 items of the Fibonacci sequence and store them in an array. It starts with 1, 1, 2, 3, 5, 8, ...
+- Generate the first 20 items of the Fibonacci sequence and store them in an array. It starts with 1, 1, 2, 3, 5, 8, ...
 
   The pattern is pretty simple:
 

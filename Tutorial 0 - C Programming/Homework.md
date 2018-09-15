@@ -77,7 +77,7 @@ When:
 - `x_size` is 20
 - `y_size` is 15
 
-#### Corrected output:
+### Corrected output:
 
 The console shows:
 

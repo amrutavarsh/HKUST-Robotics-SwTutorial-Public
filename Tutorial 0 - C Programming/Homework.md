@@ -2,7 +2,7 @@ Author: Daniel Cheung
 
 ITSC: dcheungaa@connect.ust.hk
 
-Submit the homework in separate .c files to dcheungaa@connect.ust.hk
+Submit your code in separate .c files to dcheungaa@connect.ust.hk
 
 # Homework
 

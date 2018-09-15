@@ -114,7 +114,7 @@ int main() {
 
   ```
   Please enter r: 3
-  Area of circle = 3.141593 * 3.000000 = 9.424779
+  Area of circle = 3.141593 * 3.000000 * 3.000000 = 28.274337
   ```
 
 - **Second part**

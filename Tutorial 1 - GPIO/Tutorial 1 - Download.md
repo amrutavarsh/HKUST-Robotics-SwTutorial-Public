@@ -8,11 +8,13 @@
 ██      ██   ██  ██████   █████  ███████  ██████    ██
 -->
 
-## Project:
+## Project: F1_Internal_201819
 
-### Step 1: Downloading `Waiting the the project this year to be confirmed`
+### Step 1: Downloading F1_Internal_201819
 
-`I'll do it later`
+1. Go to the repository `HKUST-Robotics-SwTutorial-Public`
+2. Select `F1_Interal_201819.zip` and download
+3. Extract at suitable location
 
 <!--
 ██   ██ ███████ ██ ██          ██ ███    ██ ███████ ████████  █████  ██      ██
@@ -86,41 +88,7 @@
 2. Run the installation file `flash_loader_demo_v2.8.0.exe`
 3. Finish the installation
 
-<!--
-███████ ████████ ███    ███     ███████ ████████    ██      ██ ███    ██ ██   ██
-██         ██    ████  ████     ██         ██       ██      ██ ████   ██ ██  ██
-███████    ██    ██ ████ ██     ███████    ██ █████ ██      ██ ██ ██  ██ █████
-     ██    ██    ██  ██  ██          ██    ██       ██      ██ ██  ██ ██ ██  ██
-███████    ██    ██      ██     ███████    ██       ███████ ██ ██   ████ ██   ██
--->
-
-<br>
-
-## STM ST-LINK Utility
-
-### Step 1: Downloading STM32 STM ST-LINK Utility
-
-1. Go to https://www.st.com/en/development-tools/stsw-link004.html
-2. Scroll down and click `Get Software`
-3. Click `ACCEPT` of the pop-up `License Agreement`
-4. Fill the required information and press `Download`
-5. Go to your email account and look for the email with the title `SOFTWARE DOWNLOAD – EMAIL CONFIRMATION`
-6. Open the email and click the link
-7. If download doesn't begin automatically,
-    * Scroll down and click `Get Software`
-    * Click `ACCEPT` of the pop-up `License Agreement`
-8. If the `Get Software` is not shown
-    * Complete the registration
-    * Login to the download page, the button should now be shown
-
-### Step 2: Installing STM32 Flash loader demonstrator
-
-1. Extract it and open the file
-2. Run the installation file `STM32 ST-LINK Utility v4.2.0 setup.exe`
-3. Finish the installation
-
-<br>
-
 ## Remarks
 
 * There will not be technical support for OS other than Windows
+* You may contact `Joseph Lam(mhlamaf)` if you counter any problem on setting up your programming environment

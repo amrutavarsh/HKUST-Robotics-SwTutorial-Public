@@ -258,6 +258,11 @@ led_off(LED1);
 - `/src/libiary/led.c`
 - `/src/libiary/led.h`
 
+<br>
+
+#### *Classwork 1*
+> Distributed during tutorial
+
 <!--
 ██████  ██    ██ ███████ ███████ ███████ ██████
 ██   ██ ██    ██    ███     ███  ██      ██   ██
@@ -304,6 +309,11 @@ buzzer_off();
 ***Library Reference:***
 - `/src/libiary/buzzer.c`
 - `/src/libiary/buzzer.h`
+
+<br>
+
+#### *Classwork 2*
+> Distributed during tutorial
 
 <!--
 ██████  ██    ██ ████████ ████████  ██████  ███    ██
@@ -381,6 +391,9 @@ if (this_ticks - last_ticks >= 50) {
 
 <br>
 
+#### *Classwork 3*
+> Distributed during tutorial
+
 ## Extra
 
 <!--
@@ -390,6 +403,8 @@ if (this_ticks - last_ticks >= 50) {
 ██      ██  ██ ██ ██    ██ ██  ██  ██
 ███████ ██   ████  ██████  ██      ██
 -->
+
+<br>
 
 ### Enum
 An **enumeration** is a type that can hold a finite set of symbolic objects, which are represented as integers internally. By default, the first object is given the value `0`, then the subsequent object is assigned a value **one greater** than the previous object's value. It is very useful in writing libraries as it increases the **readability** of the program, so everyone can understand the program easily.

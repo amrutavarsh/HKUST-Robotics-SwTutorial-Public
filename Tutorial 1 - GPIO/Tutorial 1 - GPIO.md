@@ -394,6 +394,8 @@ if (this_ticks - last_ticks >= 50) {
 #### *Classwork 3*
 > Distributed during tutorial
 
+<br>
+
 ## Extra
 
 <!--
@@ -404,7 +406,6 @@ if (this_ticks - last_ticks >= 50) {
 ███████ ██   ████  ██████  ██      ██
 -->
 
-<br>
 
 ### Enum
 An **enumeration** is a type that can hold a finite set of symbolic objects, which are represented as integers internally. By default, the first object is given the value `0`, then the subsequent object is assigned a value **one greater** than the previous object's value. It is very useful in writing libraries as it increases the **readability** of the program, so everyone can understand the program easily.

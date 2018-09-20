@@ -49,7 +49,7 @@
 10. Close pack manager and if uVision opens up, close it too
 
 ### Step 3: Opening Keil Projects
-1. Download `ustrobo17_internal`
+1. Download `F1_Internal_201819`
 2. Find the file with `.uvprojx` format and open it with Keil
 3. All the `.c` and `.h` files linked to that project should show up on the left hand side of the IDE
 4. Press `F7` or the compile button to test your environment

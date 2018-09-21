@@ -4,11 +4,13 @@
 
 ### Step 1: Connect UART to mainboard
 1. **Make sure the mainboard is *NOT* in contact with any conductive surface (e.g. metal case of your notebook, carbon fiber)**
-2. Locate the port `UART1` on the mainboard, `VTRG` can be found beside `UART1`.<br>
-  V - Vcc<br>
-  T - Tx<br>
-  R - Rx<br>
-  G - Gnd
+2. Locate the port `UART1` on the mainboard, below is a simple diagram of the pin configuration.
+```
+  _____
+__|   |__
+|V T R G|
+---------
+```
 3. Connect uart to port `UART1` with:<br>
   5V  to V<br>
   RXD to T<br>
@@ -30,7 +32,8 @@
 2. Check which COM port is it in `Windows Setting\Devices`
 3. Go back to Keil and select `Flash > Configure Flash Tools...`
 4. Select `Utilities` at the top and then select `Use External Tool for Flash Programming`
-5. Change the setting `./Objects/ustrobo18_internal.hex [your COM port id] 115200 STM32F1_Med-density_128K`. e.g. 4 if you are using COM4
+5. Change the `Command` to `flash.bat`
+5. Change the `Argument` to `./Objects/ustrobo18_internal.hex [your COM port id] 115200 STM32F1_Med-density_128K`. e.g. 4 if you are using COM4
 
 ### Step 3: Set the mainboard to BOOT mode
 1. Set the mainboard to BOOT mode by toggling the BOOT mode switch

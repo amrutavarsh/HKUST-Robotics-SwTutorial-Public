@@ -58,7 +58,7 @@ __|   |__
 5. Press `Next`
 6. Select `Download` and press `...` at the right to select the address
 7. Select `.hex` file at the bottom-right corner
-8. Select `ustrobo17_internal\Objects\ustrobo17_internal.hex` and press `Next`
+8. Select `F1_Internal_201819\Objects\ustrobo18_internal.hex` and press `Next`
 9. Wait for it to finish flashing and press `Close`
 
 #### Flashing via Keil

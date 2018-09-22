@@ -1,0 +1,2 @@
+# Tutorial 1 - GPIO Classwork and Homework
+Finish **Both Classwork and Homework** before you next tutorial start. You can come to CYT Rm3007B and test your program with the mainboard. To demo the program, you have to demo it with **software senior**, senior who are not software senior cannot mark it for you. You can go to the calendar (https://calendar.google.com/calendar?cid=M2NqMHFlMHJvcjQyajAxdGtkYjJrbXEyZG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) to find out the time slot that CYT Rm 3007B is open. Try you best to do all of the classwork and homework.

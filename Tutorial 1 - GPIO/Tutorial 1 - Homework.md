@@ -17,9 +17,9 @@
 - When a button is pressed twice within 300ms, it is considered as a double click
 - If BUTTON2 is double-clicked, enter Special Mode and turn off all LEDs ***[20 pts]***
 - Buttons will perform the following functions: ***[10 pts]***
-  - **ONLY** when BUTTON1 is pressed, LED1 turns on
-  - **ONLY** when BUTTON2 is pressed, LED2 turns on
-  - **ONLY** when BUTTON3 is pressed, buzzer beeps
+  - when **ONLY** BUTTON1 is pressed, LED1 turns on
+  - when **ONLY** BUTTON2 is pressed, LED2 turns on
+  - when **ONLY** BUTTON3 is pressed, buzzer beeps
 - If BUTTON2 double-clicked again, switch back to Normal Mode and the selected LED should be on ***[10 pts]***
 
 #### Bonus Mode [80 pts]

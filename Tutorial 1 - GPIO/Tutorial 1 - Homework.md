@@ -40,13 +40,13 @@
         - e.g. If the sequence is [BUTTON**3**]->[BUTTON**1**]->[BUTTON**2**], the selected LED flash **thrice**, then **once**, then **twice**, then flashes with a 300ms interval
         - A walk through example after entering Bonus Mode with the sequence above
           1. LED turns off for 1000ms
-          2. LED flashes thrice with a 100ms interval
+          2. LED flashes thrice with a 200ms interval
           3. LED turn off for 500ms
-          4. LED flashes once with a 100ms interval
+          4. LED flashes once with a 200ms interval
           5. LED turn off for 500ms
-          6. LED flashes twice with a 100ms interval
+          6. LED flashes twice with a 200ms interval
           7. LED turn off for 500ms
-          8. LED flashes with a 300ms interval
+          8. LED flashes with a 400ms interval
         - By pressing any of the three buttons, the whole process above will restart again
 
 

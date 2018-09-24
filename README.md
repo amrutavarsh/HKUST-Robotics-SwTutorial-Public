@@ -46,18 +46,18 @@ Advanced Tutorial 3 - STM32 Timers/Counters aka encoder, ultrasonic etc
 | Tutor | Email | Phone |
 | :---: | :---: | :---: |
 | Amrutavarsh | askinagi@connect.ust.hk | 96119475 |
-| Daniel | dcheungaa@connect.ust.hk |  |
-| Morris | mtseng@connect.ust.hk |  |
+| Daniel | dcheungaa@connect.ust.hk | 56156549 |
+| Morris | mtseng@connect.ust.hk | 97949246 |
 | Courtney | wspoonaa@connect.ust.hk |  |
 | Jason Ieong | zljieong@connect.ust.hk |  |
 | Joseph Yim| mcyim@connect.ust.hk |  |  
 | Anshuman | amedhi@connect.ust.hk | 68925193 |
 | Aaron | aswang@connect.ust.hk |  |
 | Edmund | lyleeaf@connect.ust.hk |  |
-| Cidney | yhoad@connect.ust.hk |  |
+| Cidney | yhoad@connect.ust.hk | 69942719 |
 | Joseph Lam| mhlamaf@connect.ust.hk |  |
 | Sawa| chyeungam@connect.ust.hk |  |
 | David| dsunac@connect.ust.hk |  |
-| Minsoo|  |  |
+| Minsoo| mkhang@connect.ust.hk | 63710259 |
 
 

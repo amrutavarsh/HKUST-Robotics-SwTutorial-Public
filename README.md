@@ -24,7 +24,7 @@ Tutorial Enquiry: askinagi@ust.hk ```(plz also cc robotics@ust.hk)```<br>
 | Tutorial | | | |**Tutorial 2** |**Tutorial 2**| **Tutorial 2** |**Tutorial 2** ||
 | Section  |   |   |  | Section A  | Section B  | Section C | Section D ||
 | Time     |   |   |   | 1900:2200  | 1900:2200  | 1400:1700 | 1900:2200  ||
-| Venue    |         |         |         | Rm 2612A | Rm 2611|Rm 2611| Rm 2611||
+| Venue    |         |         |         | Rm 2612A | Rm 2611|Rm 4219| Rm 4219||
 
 ## Tutorial Topics
 

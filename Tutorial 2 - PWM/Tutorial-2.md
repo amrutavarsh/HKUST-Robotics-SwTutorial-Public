@@ -26,7 +26,7 @@ Other important properties are the Peak Voltage & PWM Frequency. These are also 
 
 ### PWM Signalling
 
-A PWM Signal is an analog signal with almost all the benefits of a digital signal:
+A PWM Signal is a digital signal that emulates an anlog signal hence acheiving many benefits of both of them:
 
 1. PWM Signals can vary continuously just like normal analog signals, and unlike digital signals.
 2. Digital signals have higher tolerance for noise, as it doesnt matter whether the high voltage varies, only that it is 1) above a certain threshold and 2) the edges of the signal are still distinguishable.

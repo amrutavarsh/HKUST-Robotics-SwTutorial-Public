@@ -56,7 +56,7 @@ Advanced Tutorial 3 - STM32 Timers/Counters aka encoder, ultrasonic etc
 | Edmund | lyleeaf@connect.ust.hk |  |
 | Cidney | yhoad@connect.ust.hk | 69942719 |
 | Joseph Lam| mhlamaf@connect.ust.hk |  |
-| Sawa| chyeungam@connect.ust.hk |  |
+| Sawa| chyeungam@connect.ust.hk | 64616897 |
 | David| dsunac@connect.ust.hk |  |
 | Minsoo| mkhang@connect.ust.hk | 63710259 |
 

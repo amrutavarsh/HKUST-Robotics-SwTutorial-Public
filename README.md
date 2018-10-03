@@ -26,6 +26,22 @@ Tutorial Enquiry: askinagi@ust.hk ```(plz also cc robotics@ust.hk)```<br>
 | Time     |   |   |   | 1900:2200  | 1900:2200  | 1400:1700 | 1900:2200  ||
 | Venue    |         |         |         | Rm 2612A | Rm 2611|Rm 4219| Rm 4219||
 
+## Advanced tutorial schedule
+
+|          | Mon        | Tue        | Wed        | Thur       | Fri        | Sat-1      | Sat-2      |Sun|
+| -------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |---|
+| Date     | 01/10     | 02/10     | 03/10    | 04/10  | 05/10     | 06/10      | 06/10   |07/10|
+| Tutorial | |  |  |  | | **Tutorial adv-1** | **Tutorial adv-1**||
+| Section  |  |  |  | |   |   Section adv-A  |  Section adv-B  ||
+| Time     |  |   |  |   |  |  1400:1700   |  1900:2200  ||
+| Venue    |  |      |     |       |       |  Rm 4219     |  Rm 4219 ||
+|          |            |            |            |            |            |            |            ||
+| Date     | 08/10     | 09/10     | 10/10    | 11/10  | 12/10     | 13/10      | 13/10   |14/10|
+| Tutorial |            |            | **Tutorial adv-2** | **Tutorial adv-2** | | **Tutorial adv-3**|**Tutorial adv-3** ||
+| Section  |            |            |  Section adv-A| Section adv-B  |   | Section adv-A  | Section adv-B  ||
+| Time     |            |            | 1900:2200  | 1900:2200  |   | 1400:1700  | 1900:2200  ||
+| Venue    |            |            | Rm 2611A  | Rm 2611A  |         | Rm 4219 | Rm 4219  ||
+
 ## Tutorial Topics
 
 Tutorial 0 - C programming

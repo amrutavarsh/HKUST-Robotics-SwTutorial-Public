@@ -843,7 +843,7 @@ uart_rx_init(COM1,&foo);
 3. The function will be called once the signal triggered the board.
 
 ### **basic principle of writing header and source file**
->try to follow these rules or *@Daniel* will be mad at you 
+>try to follow these rules or [@Daniel](https://github.com/danvim) will be mad at you 
 
 **Rule #1. Each module with its .h and .c file should correspond to a clear piece of functionality.**
 

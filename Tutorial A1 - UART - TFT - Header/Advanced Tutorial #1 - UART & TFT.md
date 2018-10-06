@@ -11,12 +11,11 @@ Contact: mtseng@connect.ust.hk
 >By Morris Tseng
 ## Initialize
 ```C
-void tft_init(u8 oritentation, u16 in_bg_color, u16 in_text_color, u16 in_text_color_sp);
+void tft_init(TFT_ORIENTATION orientation, u16 in_bg_color, u16 in_text_color, u16 in_text_color_sp, u16 in_hightlight_color);
 ```
-*    oritentation: range from 0 to 3 
-(Entering 0 would takes the position of the tft pins as top, then turn in the clockwise direction for 1 to 3.)
-* in_bg_color, in_text_color, and in_text_color_sp: in_bg_color, in_text_color and in_text_color_sp : 
-colour for background, text, and special text respectively
+*    orientation: PIN_ON_TOP, PIN_ON_BOTTOM, PIN_ON_LEFT, PIN_ON_RIGHT
+* in_bg_color, in_text_color, in_text_color_sp, in_highlight_color:
+colour for background, normal text, special text and highlight color respectively
 
 Default colours:
 ```C
@@ -49,8 +48,8 @@ void tft_clear_line(u8 line);// clear one row
 ```C
 void tft_prints(u8 x, u8 y, const char* pstr, ...);
 ```
-*    x : n-th horizontal pixel, ranged from 0 to 127 (i.e. 128 pixels per row)
-*    y : n-th vertical pixel, ranged from 0 to 159 (i.e. 160 pixels per column)
+*    x : n-th horizontal column, ranged from 0 to 16 (i.e. 16 row)
+*    y : n-th vertical line, ranged from 0 to 10 (i.e. 10 column)
 *    color : colour of the pixel (in RGB565 format)
 
 Example:
@@ -65,8 +64,6 @@ void tft_put_pixel(u8 x, u8 y, u16 color);
 *    x : n-th horizontal pixel, ranged from 0 to 127 (i.e. 128 pixels per row)
 *    y : n-th vertical pixel, ranged from 0 to 159 (i.e. 160 pixels per column)
 *    color : colour of the pixel, also in RGB565 format
-
-p.s. useful in printing camera output
 
 ## Update
 ```C

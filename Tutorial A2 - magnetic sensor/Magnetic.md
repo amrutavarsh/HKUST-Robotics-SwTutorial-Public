@@ -10,7 +10,7 @@ When there is current, it will generate a magnetic field according to the left h
 ![inductor](https://electronicsarea.com/wp-content/uploads/inductor-magnetic-field-lines-e1437088112274.gif)
 
 The inductor is actually just a circular coil of wire. The varying magnetic field will induce emf to the coil to produce an opposing magnetic field. The induced emf ![E](https://latex.codecogs.com/gif.latex?E) would be inversely proportional to the distance ![r](https://latex.codecogs.com/gif.latex?r) between the wire and the inductor.
-Other than the position of the inductor, the angle of the inductor relative to the wire also matters to the magnitude of induced emf since it can only induce emf when the coil **cuts through** the magnetic field. Simply put, assuming the position of the coil didn't moved, when the coil is **parallel** to the magnetic field, it will **not** pick up any singal from the wire. And when it is **perpendicular** to the magnetic field, the induced emf should be at its **maximum**. When you rotate the coil from 0deg to 90deg, the induced emf should be a sin curve.
+Other than the position of the inductor, the angle of the inductor relative to the wire also matters to the magnitude of induced emf since it can only induce emf when the coil **cuts through** the magnetic field. Simply put, assuming the position of the coil didn't moved, when the coil is **parallel** to the signal wire, it will **not** pick up any singal from the wire. And when it is **perpendicular** to the signal wire, the induced emf should be at its **maximum**. When you rotate the coil from 0deg to 90deg, the induced emf should be a sin curve.
 
 Here we take ![theta](https://latex.codecogs.com/gif.latex?%5Ctheta) as the angle between the coil and the magtic field, ![h](https://latex.codecogs.com/gif.latex?h)  and ![x](https://latex.codecogs.com/gif.latex?x) to be the vertical and horizontal distance between the coil and the wire.
 
@@ -45,7 +45,7 @@ The ADC_IO_x are in ADCPort* variable type already, as needed for all following 
 void adc_channel_init(ADCPort* adc_port);
 ```
 While there are named 1 to 8 in the software side. The labeling on the board is different. There are named GPIO5-8 and P9 on the board. You can see which channel they are referred to from the schematics(the image below or F1_Internal_201819/PDFs/Schematic.pdf). 
-![gpio schematics](https://github.com/amrut1999/HKUST-Robotics-Team-Software-Tutorial-2018/blob/master/Tutorial%20A2%20-%20Image%20-%20magnetic/gpio_pins.jpg)
+![gpio schematics](./gpio_pins.jpg)
 
 *Advice: Use the pins from P9 for easier cable management.*
 #### *Initialize ADC*

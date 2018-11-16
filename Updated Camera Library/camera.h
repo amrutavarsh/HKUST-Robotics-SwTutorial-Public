@@ -13,8 +13,8 @@
 #define HOFFSET 0 //Fix Image Centering Problem
 #define VOFFSET 0
 
-#define ImageLength 60
-#define ImageWidth 80
+#define ImageLength 60 //Can be 320/N for N=1, 2, 4, 8
+#define ImageWidth 80  //Can be 240/N for N=1, 2, 4, 8
 
 #include "stm32f10x.h"
 #include "ticks.h"

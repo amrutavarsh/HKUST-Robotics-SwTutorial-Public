@@ -9,11 +9,13 @@
 
 #ifndef __OV7725_H
 #define __OV7725_H
-#define OverSampling 4 //1, 2, 3, 4 //Fix Field of View Problem
+
 #define HOFFSET 0 //Fix Image Centering Problem
 #define VOFFSET 0
+
 #define ImageLength 60
 #define ImageWidth 80
+
 #include "stm32f10x.h"
 #include "ticks.h"
 #include "lcd_main.h"

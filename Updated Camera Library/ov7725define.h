@@ -273,96 +273,135 @@ typedef struct
 	uint8_t data;
 }OV7725REG;
 
+typedef enum {
+	DontDownSample=0, DownSample2X, DownSample4X, DownSample8X
+} DownSampling;
+
+
+#if ImageWidth == 320
+#define DownSamplingX DontDownSample
+#endif
+#if ImageWidth == 160
+#define DownSamplingX DownSample2X
+#endif
+#if ImageWidth == 80
+#define DownSamplingX DownSample4X
+#endif
+#if ImageWidth == 40
+#define DownSamplingX DownSample8X
+#endif
+
+#if ImageLength == 240
+#define DownSamplingY DontDownSample
+#endif
+#if ImageLength == 120
+#define DownSamplingY DownSample2X
+#endif
+#if ImageLength == 60
+#define DownSamplingY DownSample4X
+#endif
+#if ImageLength == 30
+#define DownSamplingY DownSample8X
+#endif
+
 //register default
-static OV7725REG cameraConfig[] =
+OV7725REG cameraConfig[] =
 {
-	{CLKRC,         0x00},
-	{COM7,          0x46},
+	{COM2,			0x03},
+	{CLKRC,     0x00},
+	{COM7,      0x46},
 	//default value for QVGA
-	{HSTART,     0x3f},
-	{HSIZE,      0x50},
-	{VSTRT,      0x03},
-	{VSIZE,      0x78},
-	{HREF,       0x00},
-	{HOutSize,   0x50},
-	{VOutSize,   0x78},
-	{EXHCH,      0x00},
+	{HSTART,    0x3f},
+	{HSIZE,     0x50},
+	{VSTRT,     0x03},
+	{VSIZE,     0x78},
+	{HREF,      0x00},
 	//tuned value for 80*60	
-	/*{HSTART,        0x20},
-	{HSIZE,         ImageWidth>>2},
-	{VSTRT,         0x2f},
-	{VSIZE,         ImageLength>>1},
-	{HREF,         (ImageLength&0x01<<2)|(ImageWidth&0x03)},*/
-	//{HOutSize,      ImageWidth>>2},
-	//{VOutSize,      ImageLength>>1},
-	//{EXHCH,        (ImageLength&0x01<<2)|(ImageWidth&0x03)},
-	{TGT_B,         0x7f},
-	{FixGain,       0x09},
-	{AWB_Ctrl0,     0xe0},
-	{DSP_Ctrl1,     0xff},
-	{DSP_Ctrl2,     0x20},
-	{DSP_Ctrl3,	    0x00},
-	{DSP_Ctrl4,     0x00},
-	{COM8,		    0xff},
-	{COM4,		    0xC1},
-	{COM6,		    0xc5},
-	{COM9,		    0x21},
-	{BDBase,	    0xFF},
-	{BDMStep,	    0x01},
+	//{HSTART,    0x20},
+	//{HSIZE,     IMAGE_WIDTH>>2},
+	//{VSTRT,     0x2f},
+	//{VSIZE,     IMAGE_LENGTH>>1},
+	//{HREF,      (IMAGE_LENGTH&0x01<<2)|(IMAGE_WIDTH&0x03)},
+	{HOutSize,  ImageWidth>>2},
+	{VOutSize,  ImageLength>>1},
+	{EXHCH,     (ImageLength&0x01<<2)|(ImageWidth&0x03)},
+	//{HOutSize,  0x50},
+	//{VOutSize,  0x78},
+	//{EXHCH,     0x00},
+	{TGT_B,     0x7f},
+	{FixGain,   0x09},
+	{AWB_Ctrl0, 0xe0},
+	{DSP_Ctrl1, 0xbf},
+	{DSP_Ctrl2, 0x0c},
+	{DSP_Ctrl3,	0x00},
+	{DSP_Ctrl4, 0x00},
+	{DSPAuto,		0xff},
+	{SCAL0,			(DownSamplingY<<2)|(DownSamplingX)},
+	{COM8,		  0xf0},
+	{COM4,		  0xc1},
+	{COM6,		  0xc5},
+	{COM9,		  0x21},
+	{BDBase,	  0xFF},
+	{BDMStep,	  0x01},
 	{AEW,		    0x34},
 	{AEB,		    0x3c},
 	{VPT,		    0xa1},
-	{EXHCL,		    0x00},
-	{AWBCtrl3,      0xaa},
-	{COM8,		    0xff},
-	{AWBCtrl1,      0x5d},
-	{EDGE1,		    0x0a},
-	{DNSOff,	    0x01},
-	{EDGE2,		    0x01},
-	{EDGE3,		    0x01},
-	{MTX1,		    0x5f},
-	{MTX2,		    0x53},
-	{MTX3,		    0x11},
-	{MTX4,		    0x1a},
-	{MTX5,		    0x3d},
-	{MTX6,		    0x5a},
-	{MTX_Ctrl,      0x1e},
-	{BRIGHT,	    0x00},
-	{CNST,		    0x25},
-	{USAT,		    0x65},
-	{VSAT,		    0x65},
-	{UVADJ0,	    0x81},
+	{EXHCL,		  0x00},
+	{AWBCtrl3,  0xaa},
+	{COM8,		  0xff},
+	{AWBCtrl1,  0x5d},
+	{EDGE1,		  0x0a},
+	{DNSOff,	  0x01},
+	{EDGE2,		  0x01},
+	{EDGE3,		  0x01},
+	{MTX1,		  0x5f},
+	{MTX2,		  0x53},
+	{MTX3,		  0x11},
+	{MTX4,		  0x1a},
+	{MTX5,		  0x3d},
+	{MTX6,		  0x5a},
+	{MTX_Ctrl,  0x1e},
+	{BRIGHT,	  0x00},
+	{CNST,		  0x25},
+	{USAT,		  0x65},
+	{VSAT,		  0x65},
+	{UVADJ0,	  0x11},
+	{UVADJ1,	  0x02},
 	{SDE,		    0x06},
-	{GAM1,		    0x0c},
-	{GAM2,		    0x16},
-	{GAM3,		    0x2a},
-	{GAM4,		    0x4e},
-	{GAM5,		    0x61},
-	{GAM6,		    0x6f},
-	{GAM7,		    0x7b},
-	{GAM8,		    0x86},
-	{GAM9,		    0x8e},
-	{GAM10,		    0x97},
-	{GAM11,		    0xa4},
-	{GAM12,		    0xaf},
-	{GAM13,		    0xc5},
-	{GAM14,		    0xd7},
-	{GAM15,		    0xe8},
-	{SLOP,		    0x20},
-	{HUECOS,	    0x80},
-	{HUESIN,	    0x80},
-	{DSPAuto,	    0xff},
-	{DM_LNL,	    0x00},
-	{BDBase,	    0x99},
-	{BDMStep,	    0x03},
-	{LC_RADI,	    0x00},
-	{LC_COEF,	    0x13},
-	{LC_XC,		    0x08},
-	{LC_COEFB,      0x14},
-	{LC_COEFR,      0x17},
-	{LC_CTR,	    0x05},
-	{COM3_,		    0xd0},
-	{COM5,			0x00}, //F5
+	{GAM1,		  0x0e},
+	{GAM2,		  0x1a},
+	{GAM3,		  0x31},
+	{GAM4,		  0x5a},
+	{GAM5,		  0x69},
+	{GAM6,		  0x75},
+	{GAM7,		  0x7e},
+	{GAM8,		  0x88},
+	{GAM9,		  0x8f},
+	{GAM10,		  0x96},
+	{GAM11,		  0xa3},
+	{GAM12,		  0xaf},
+	{GAM13,		  0xc5},
+	{GAM14,		  0xd7},
+	{GAM15,		  0xe8},
+	{SLOP,		  0x20},
+	{HUECOS,	  0x80},
+	{HUESIN,	  0x80},
+	{DSPAuto,	  0xff},
+	{DM_LNL,	  0x00},
+	{BDBase,	  0x99},
+	{BDMStep,	  0x03},
+	{LC_YC,			0x00},
+	{LC_RADI,	  0x00},
+	{LC_COEF,	  0x13},
+	{LC_XC,		  0x08},
+	{LC_COEFB,  0x14},
+	{LC_COEFR,  0x17},
+	{LC_CTR,	  0x05},
+	{COM3_,		  0xd0},
+	{COM5,			0x00},
+	{SIGN,			0x06},
+	{REG16,			0x00},
+	{COM10,			0x00}
 };
 
 uint8_t cameraConfigLength = sizeof(cameraConfig)/sizeof(cameraConfig[0]);

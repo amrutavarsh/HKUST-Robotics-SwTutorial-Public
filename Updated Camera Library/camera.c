@@ -72,7 +72,7 @@ uint8_t camera_init() {
 
 
 uint8_t camera_ready() {
-	return camState == 2;
+	return camState != 0;
 }
 
 __attribute__((always_inline))
@@ -105,15 +105,6 @@ static inline void skip_row(volatile u16* rclkh, volatile u16* rclkl, u16 rclkp)
 	while(i) {
 		i--; \
 		skip_pixel(rclkh, rclkl, rclkp);
-#if OverSampling > 1
-		skip_pixel(rclkh, rclkl, rclkp);
-#if OverSampling > 2
-		skip_pixel(rclkh, rclkl, rclkp);
-#if OverSampling > 3
-		skip_pixel(rclkh, rclkl, rclkp);
-#endif
-#endif
-#endif
 	}
 }
 
@@ -129,9 +120,6 @@ static inline void camera_receive_row(u8* ptr, volatile u16* idr, volatile u16* 
 }
 
 uint8_t camera_receive_frame(void) {
-	if(camState != 2)
-		return ERROR;
-	
 	FIFO_READY;
 	
 		u8* ptr = &image[0][0];
@@ -145,15 +133,6 @@ uint8_t camera_receive_frame(void) {
 		do {
 			camera_receive_row(ptr, idr, rclkh, rclkl, rclkp);
 			ptr += ImageWidth;
-#if OverSampling > 1
-			skip_row(rclkh, rclkl, rclkp);
-#if OverSampling > 2
-			skip_row(rclkh, rclkl, rclkp);
-#if OverSampling > 3
-			skip_row(rclkh, rclkl, rclkp);
-#endif
-#endif
-#endif
 		} while(ptr != end);
 	
 	camState = 0;
@@ -191,7 +170,7 @@ uint8_t camera_printing_done() {
 }
 
 void EXTI12_IRQHandler(void) {
-	if(camState == 0)
+	if(camState != 1)
 	{
 		FIFO_WRST_L();
 		FIFO_WEN_L();
